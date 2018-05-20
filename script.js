@@ -9,6 +9,7 @@ function getRandomColor() {
 
 function changeColor() {
   var bodyElement = document.getElementsByTagName("body");
+  var outputElement = document.getElementById("randomColorOutput");
   var redValue = getRandomColor();
   var greenValue = getRandomColor();
   var blueValue = getRandomColor();
@@ -16,4 +17,6 @@ function changeColor() {
   redSpan.innerHTML = redValue + ",";
   greenSpan.innerHTML = greenValue + ",";
   blueSpan.innerHTML = blueValue;
+  // Invert the background color values and apply it to the output text color for contrast
+  outputElement.style.color = "rgb(" + (255 - redValue) + "," + (255 - greenValue) + "," + (255 - blueValue) + ")";
 }
