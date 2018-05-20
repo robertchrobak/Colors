@@ -1,0 +1,17 @@
+body {
+  font-family: monospace;
+  text-align: center;
+}
+
+button {
+  font-family: monospace;
+  margin-top: 20px;
+}
+
+.randomColorOutput {
+  padding-top: 20px;
+}
+
+#redValue, #greenValue, #blueValue {
+
+}
